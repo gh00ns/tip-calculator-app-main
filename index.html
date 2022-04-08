@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="title">
+      <img src="./images/logo.svg" alt="" />
+    </div>
+
+    <div class="main__container">
+      <div class="bill__container">
+        <p class="bill">Bill</p>
+        <div class="bill__input">
+          <img src="./images/icon-dollar.svg" alt="" class="img__sign" />
+          <input type="number" min="0.00" step="0.01" placeholder="0" />
+        </div>
+      </div>
+
+      <div class="tip__select__container">
+        <p class="select__tip">Select Tip %</p>
+        <div class="button__container">
+          <button class="btn__5">5%</button>
+          <button class="btn__10">10%</button>
+          <button class="btn__15">15%</button>
+          <button class="btn__25">25%</button>
+          <button class="btn__50">50%</button>
+          <button class="btn__custom">Custom</button>
+        </div>
+      </div>
+
+      <div class="people__container">
+        <p class="number__people">Number of People</p>
+        <div class="people__input">
+          <img src="./images/icon-person.svg" alt="" class="img__person" />
+          <input type="number" min="0" step="1" placeholder="0" />
+        </div>
+      </div>
+
+      <div class="total__container">
+        <div class="tip__amount">
+          <div class="tip__amount__text">
+            <h4>Tip Amount</h4>
+            <p>/ person</p>
+          </div>
+          <h2 class="tip__amount__input">$0.00</h2>
+        </div>
+        <div class="total">
+          <div class="total__amount__text">
+            <h4>Total</h4>
+            <p>/ person</p>
+          </div>
+          <h2 class="total__amount__input">$0.00</h2>
+        </div>
+        <button class="btn__reset">RESET</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
