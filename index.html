@@ -27,7 +27,13 @@
         <p class="bill">Bill</p>
         <div class="bill__input">
           <img src="./images/icon-dollar.svg" alt="" class="img__sign" />
-          <input type="number" min="0.00" step="0.01" placeholder="0" />
+          <input
+            inputmode="numeric"
+            pattern="[0-9]"
+            min="0.00"
+            step="0.01"
+            placeholder="0"
+          />
         </div>
       </div>
 
@@ -47,7 +53,13 @@
         <p class="number__people">Number of People</p>
         <div class="people__input">
           <img src="./images/icon-person.svg" alt="" class="img__person" />
-          <input type="number" min="0" step="1" placeholder="0" />
+          <input
+            inputmode="numeric"
+            pattern="[0-9]"
+            min="0"
+            step="1"
+            placeholder="0"
+          />
         </div>
       </div>
 
