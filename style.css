@@ -4,6 +4,7 @@
 /* COLORS */
 :root {
   --Strong-cyan: hsl(172, 67%, 45%);
+  --Strong-cyan-hover: hsl(172, 48%, 72%);
   --Very-dark-cyan: hsl(183, 100%, 15%);
   --Little-dark-cyan: hsl(183, 98%, 20%);
   --Dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -104,8 +105,10 @@ input::placeholder {
 }
 
 .tip__select__container .button__container .btn__custom {
+  border-radius: 5px;
   background-color: var(--Light-grayish-cyan);
   color: var(--Dark-grayish-cyan);
+  text-align: center;
 }
 
 .people__container {
@@ -189,8 +192,14 @@ input::placeholder {
 /* STATES */
 .tip__select__container .button__container button:hover {
   cursor: pointer;
+  background-color: var(--Strong-cyan-hover);
+  color: var(--Very-dark-cyan);
 }
 
 .total__container .btn__reset:hover {
   cursor: pointer;
+}
+
+input:focus {
+  outline: none;
 }
