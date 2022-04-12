@@ -93,6 +93,7 @@ input::placeholder {
   grid-template-columns: repeat(2, 147px);
   grid-row-gap: 16px;
   grid-column-gap: 16px;
+  justify-content: center;
 }
 
 .tip__select__container .button__container button {
